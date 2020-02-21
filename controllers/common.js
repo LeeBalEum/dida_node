@@ -31,9 +31,7 @@ exports.setResult = function (req, result) {
     if (req.result == undefined) {
         req.result = result;
         req.result.ogmeta = {
-            title: "차일두-어린이 액티비티 플랫폼",
-            description: "우리아이를 위한 특별한 경험을 원한다면 클릭!",
-            image: "https://s3.ap-northeast-2.amazonaws.com/childo-golab/ogmeta/ogmeta-img.png",
+            title: "디데이 다이어리 DIDA!"
         }
         req.result.userAgent = req.headers['user-agent'];
         req.result.needPopup = true;

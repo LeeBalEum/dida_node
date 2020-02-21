@@ -229,8 +229,8 @@ exports.userInfo = function (req, res, next) {
 
 // 사용자 추가  member/addMember
 exports.addMember = function (req, res, next) {
-    let { userNo, userCode } = req.body;
-    let query = `INSERT INTO member (userCode, isDeleteYn) VALUES ('${userCode}', 0)`;
+    let { userNo, userCode, deviceInfo } = req.body;
+    let query = `INSERT INTO member (userCode, isDeleteYn, deviceInfo) VALUES ('${userCode}', 0, '${deviceInfo}')`;
 
 
     console.log(query);

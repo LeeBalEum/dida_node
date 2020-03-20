@@ -260,11 +260,11 @@ exports.updateMember = function (req, res, next) {
 
 
     if (colorNum != null) {
-        query += ` colorNum = ${colorNum}`
+        query += ` colorNum = '${colorNum}'`
     }
 
     if (firstDate != null) {
-        query += `, firstDate = '${firstDate}'`
+        query += ` firstDate = '${firstDate}'`
     }
 
 
